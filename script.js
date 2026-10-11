@@ -232,6 +232,17 @@ function openModal(id) {
 
     const hasMultiple = p.images.length > 1;
 
+    // Handle project link button
+    const modalLink = $("modal-link");
+    if (p.link) {
+        modalLink.href = p.link;
+        const textSpan = modalLink.querySelector("span");
+        if (textSpan) textSpan.textContent = p.linkText || "Visit Landing Page";
+        modalLink.style.display = "inline-flex";
+    } else {
+        modalLink.style.display = "none";
+    }
+
     if (hasMultiple) {
         modalPrev.classList.add("is-visible");
         modalNext.classList.add("is-visible");
