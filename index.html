@@ -109,16 +109,16 @@
                     <div class="project-grid">
                         <article class="card" data-project="neurolink-fe" data-reveal tabindex="0" role="button" aria-haspopup="dialog">
                             <div class="card__image" style="--bg: linear-gradient(0deg, #4e4f67 0%, #9c9ecd 100%)">
-                                <img src="assets/neurolink.png" alt="Neurolink frontend preview" loading="lazy">
+                                <img src="assets/NeurolinkLanding.png" alt="Neurolink frontend preview" loading="lazy">
                                 <span class="card__cta">View project <span aria-hidden="true">→</span></span>
                             </div>
                             <div class="card__desc">
-                                <h3>Neurolink</h3>
-                                <p>A task manager that connect the team</p>
+                                <h3>Neurolink Landing Page</h3>
+                                <p>A Landing page for Neurolink, from one of my projects</p>
                             </div>
                         </article>
 
-                        <article class="card" data-project="rangemate-fe" data-reveal style="--delay: 100ms" tabindex="0" role="button" aria-haspopup="dialog">
+                        <!-- <article class="card" data-project="rangemate-fe" data-reveal style="--delay: 100ms" tabindex="0" role="button" aria-haspopup="dialog">
                             <div class="card__image" style="--bg: linear-gradient(180deg, #ff5b00 0%, #311c10 100%)">
                                 <img src="assets/rangemate.png" alt="Rangemate frontend preview" loading="lazy">
                                 <span class="card__cta">View project <span aria-hidden="true">→</span></span>
@@ -127,7 +127,7 @@
                                 <h3>Rangemate</h3>
                                 <p>A task manager that connect the team</p>
                             </div>
-                        </article>
+                        </article> -->
                     </div>
                 </div>
             </div>
@@ -179,7 +179,16 @@
     <dialog class="modal" id="project-modal" aria-labelledby="modal-title">
         <button class="modal__close" id="modal-close" aria-label="Close">✕</button>
         <div class="modal__media">
-            <div class="modal__main" id="modal-main"><img id="modal-img" src="" alt=""></div>
+            <div class="modal__main" id="modal-main">
+                <button type="button" class="modal__nav modal__nav--prev" id="modal-prev" aria-label="Previous photo">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                </button>
+                <div class="modal__slider" id="modal-slider" tabindex="0" role="region" aria-label="Project images gallery"></div>
+                <button type="button" class="modal__nav modal__nav--next" id="modal-next" aria-label="Next photo">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+                <div class="modal__dots" id="modal-dots" aria-label="Gallery pagination"></div>
+            </div>
             <div class="modal__thumbs" id="modal-thumbs"></div>
         </div>
         <div class="modal__body">
@@ -192,6 +201,13 @@
                 <div><dt>Tools</dt><dd id="modal-tools"></dd></div>
                 <div><dt>Year</dt><dd id="modal-year"></dd></div>
             </dl>
+            <a href="#" id="modal-link" class="modal__cta-btn" target="_blank" rel="noopener" style="display: none;">
+                <span>Visit Landing Page</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="7" y1="17" x2="17" y2="7"/>
+                    <polyline points="7 7 17 7 17 17"/>
+                </svg>
+            </a>
         </div>
     </dialog>
 
