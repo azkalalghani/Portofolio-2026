@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azkal Alghani — UI/UX Designer & Frontend Developer</title>
+    <meta name="description" content="Portfolio of Azkal Alghani, a UI/UX designer and frontend developer crafting functional, user-centered digital products.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#top" class="header__logo">Azkal Alghani</a>
+        <nav class="header__nav" aria-label="Main">
+            <a href="#projects">Project</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main id="top">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero__inner">
+                <img class="hero__photo" data-reveal src="assets/profile-7b9c6e.png" alt="Portrait of Azkal Alghani" width="290" height="290">
+                <div class="hero__grid">
+                    <h1 class="hero__title" data-reveal style="--delay: 100ms">UI/UX Designer</h1>
+                    <div class="hero__bars" data-reveal style="--delay: 200ms" aria-hidden="true">
+                        <span></span><span></span>
+                    </div>
+                    <div class="hero__squares" data-reveal style="--delay: 300ms" aria-hidden="true">
+                        <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                    <p class="hero__title" data-reveal style="--delay: 400ms">Frontend Dev</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="container"><hr class="divider" data-reveal></div>
+
+        <!-- About -->
+        <section class="about" id="about">
+            <h2 class="about__title" data-reveal>About me</h2>
+            <p class="about__text" data-reveal style="--delay: 120ms">
+                Undergraduated from Universitas Muhammadiyah Surakarta specializing in digital product design and technology. Proven capability in collaborating within cross-functional teams, adept at aligning user requirements with technical execution. Ample experience in conducting user and product research, wireframing, and designing user interfaces for digital applications. Passionate about product innovation, specifically in building functional, user-centered apps. Highly collaborative and adaptable, comfortable navigating the iterative cycle between research insights and design execution.
+            </p>
+        </section>
+
+        <!-- Projects -->
+        <section class="projects" id="projects">
+            <div class="projects__left">
+                <h2 class="projects__title" data-reveal>Projects</h2>
+                <p class="projects__subtitle" data-reveal style="--delay: 100ms">Curated project from my experience and pratices</p>
+            </div>
+
+            <div class="projects__right">
+                <div class="project-group">
+                    <span class="pill" data-reveal>UI/UX</span>
+                    <div class="project-grid">
+                        <article class="card" data-project="neurolink" data-reveal tabindex="0" role="button" aria-haspopup="dialog">
+                            <div class="card__image" style="--bg: linear-gradient(0deg, #4e4f67 0%, #9c9ecd 100%)">
+                                <img src="assets/neurolink.png" alt="Neurolink dashboard preview" loading="lazy">
+                                <span class="card__cta">View project <span aria-hidden="true">→</span></span>
+                            </div>
+                            <div class="card__desc">
+                                <h3>Neurolink</h3>
+                                <p>A task manager that connect the team</p>
+                            </div>
+                        </article>
+
+                        <article class="card" data-project="rangemate" data-reveal style="--delay: 100ms" tabindex="0" role="button" aria-haspopup="dialog">
+                            <div class="card__image" style="--bg: linear-gradient(180deg, #ff5b00 0%, #311c10 100%)">
+                                <img src="assets/rangemate.png" alt="Rangemate app preview" loading="lazy">
+                                <span class="card__cta">View project <span aria-hidden="true">→</span></span>
+                            </div>
+                            <div class="card__desc">
+                                <h3>Rangemate</h3>
+                                <p>An automation tool that help the team to work faster</p>
+                            </div>
+                        </article>
+
+                        <article class="card" data-project="fulus" data-reveal tabindex="0" role="button" aria-haspopup="dialog">
+                            <div class="card__image" style="--bg: linear-gradient(180deg, #6d9ddf 0%, #3b5579 100%)">
+                                <img src="assets/fulus.png" alt="Fulus app preview" loading="lazy">
+                                <span class="card__cta">View project <span aria-hidden="true">→</span></span>
+                            </div>
+                            <div class="card__desc">
+                                <h3>Fulus</h3>
+                                <p>A finance dashboard to monitor and manage your expenses</p>
+                            </div>
+                        </article>
+
+                        <article class="card" data-project="coint" data-reveal style="--delay: 100ms" tabindex="0" role="button" aria-haspopup="dialog">
+                            <div class="card__image card__image--phone" style="--bg: linear-gradient(0deg, #56674e 0%, #9ccd9f 100%)">
+                                <img src="assets/coint.png" alt="Coint mobile app preview" loading="lazy">
+                                <span class="card__cta">View project <span aria-hidden="true">→</span></span>
+                            </div>
+                            <div class="card__desc">
+                                <h3>Coint</h3>
+                                <p>A finance mobile app to track your money</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="project-group">
+                    <span class="pill" data-reveal>Frontend</span>
+                    <div class="project-grid">
+                        <article class="card" data-project="neurolink-fe" data-reveal tabindex="0" role="button" aria-haspopup="dialog">
+                            <div class="card__image" style="--bg: linear-gradient(0deg, #4e4f67 0%, #9c9ecd 100%)">
+                                <img src="assets/neurolink.png" alt="Neurolink frontend preview" loading="lazy">
+                                <span class="card__cta">View project <span aria-hidden="true">→</span></span>
+                            </div>
+                            <div class="card__desc">
+                                <h3>Neurolink</h3>
+                                <p>A task manager that connect the team</p>
+                            </div>
+                        </article>
+
+                        <article class="card" data-project="rangemate-fe" data-reveal style="--delay: 100ms" tabindex="0" role="button" aria-haspopup="dialog">
+                            <div class="card__image" style="--bg: linear-gradient(180deg, #ff5b00 0%, #311c10 100%)">
+                                <img src="assets/rangemate.png" alt="Rangemate frontend preview" loading="lazy">
+                                <span class="card__cta">View project <span aria-hidden="true">→</span></span>
+                            </div>
+                            <div class="card__desc">
+                                <h3>Rangemate</h3>
+                                <p>A task manager that connect the team</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get in touch -->
+        <section class="contact" id="contact">
+            <p class="contact__text" id="scrub-text">I’m still learning and practicing in this journey a lot, Get in touch to help my journey!</p>
+
+            <ul class="contact__list">
+                <li data-reveal>
+                    <a class="contact__row" href="https://www.instagram.com/azkalalghani" target="_blank" rel="noopener">
+                        <span class="contact__platform"><img src="assets/instagram.svg" alt="" width="48" height="48">Instagram</span>
+                        <span class="contact__handle">@Azkalalghani <span class="contact__arrow" aria-hidden="true">↗</span></span>
+                    </a>
+                </li>
+                <li data-reveal style="--delay: 100ms">
+                    <a class="contact__row" href="https://www.linkedin.com/in/azkalalghani" target="_blank" rel="noopener">
+                        <span class="contact__platform"><img src="assets/linkedin.svg" alt="" width="48" height="48">LinkedIn</span>
+                        <span class="contact__handle">@Azkalalghani <span class="contact__arrow" aria-hidden="true">↗</span></span>
+                    </a>
+                </li>
+                <li data-reveal style="--delay: 200ms">
+                    <a class="contact__row" href="mailto:alghani175@gmail.com">
+                        <span class="contact__platform"><img src="assets/email.svg" alt="" width="48" height="48">Email</span>
+                        <span class="contact__handle">alghani175@gmail.com <span class="contact__arrow" aria-hidden="true">↗</span></span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__top">
+            <p class="footer__headline" data-reveal>Open to any possibility!</p>
+            <div class="footer__social" data-reveal style="--delay: 100ms">
+                <p>Social Media</p>
+                <div class="footer__icons">
+                    <a href="https://www.instagram.com/azkalalghani" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/instagram.svg" alt="" width="32" height="32"></a>
+                    <a href="https://www.linkedin.com/in/azkalalghani" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="assets/linkedin.svg" alt="" width="32" height="32"></a>
+                    <a href="mailto:alghani175@gmail.com" aria-label="Email"><img src="assets/email.svg" alt="" width="32" height="32"></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer__copy"><span>AZKALALGHANI</span> © <span>2026</span></p>
+    </footer>
+
+    <!-- Project modal -->
+    <dialog class="modal" id="project-modal" aria-labelledby="modal-title">
+        <button class="modal__close" id="modal-close" aria-label="Close">✕</button>
+        <div class="modal__media">
+            <div class="modal__main" id="modal-main"><img id="modal-img" src="" alt=""></div>
+            <div class="modal__thumbs" id="modal-thumbs"></div>
+        </div>
+        <div class="modal__body">
+            <span class="pill" id="modal-category"></span>
+            <h2 class="modal__title" id="modal-title"></h2>
+            <p class="modal__tagline" id="modal-tagline"></p>
+            <p class="modal__desc" id="modal-desc"></p>
+            <dl class="modal__meta">
+                <div><dt>Role</dt><dd id="modal-role"></dd></div>
+                <div><dt>Tools</dt><dd id="modal-tools"></dd></div>
+                <div><dt>Year</dt><dd id="modal-year"></dd></div>
+            </dl>
+        </div>
+    </dialog>
+
+    <script src="script.js"></script>
+</body>
+</html>
